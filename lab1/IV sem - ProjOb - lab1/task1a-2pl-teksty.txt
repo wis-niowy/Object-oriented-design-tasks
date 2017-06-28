@@ -1,0 +1,39 @@
+Udostêpniona jest klasa TextReader, której zadaniem jest czytanie ze strumienia tekstowego.
+Klasa ta udostêpnia jedn¹ metodê publiczn¹: PrintNextChar(), która wypisuje kolejny znak ze strumienia. Strumienie nie maj¹ ograniczonej d³ugoœci. 
+Przyk³ady u¿ycia obiektów tej klasy s¹ pokazane w funkcji Main.
+Klasy TextReader nie wolno modyfikowaæ.
+
+Zadanie polega na zaproponowaniu metody modyfikacji wyœwietlania danych ze strumienia, czyli stworzenie nowego strumienia X (typu TextReader) o nastêpuj¹cym dzia³aniu:
+1. Strumieñ X1 przekszta³ca dane ze strumienia Y, zmieniaj¹c ma³e litery na wielkie.
+
+Czyli jeœli strumieñ Y wypisuje kolejno a,b,A,3,
+strumieñ X wypisze kolejno A,B,A,3
+
+2. Strumieñ X2 zamienia znaki nowej linii na tabulatory, a tabulatory na spacje.
+
+Czli tekst "ala\nma\tkota" zostanie wyœwietlony jako "ala\tma kota".
+
+3. Strumieñ X3 najpierw usuwa wyst¹pienia wielkiej litery A, a nastêpnie zmienia wszystkie ma³e litery a na A.
+
+Czyli tekst "Ala ma kota" zostanie wyœwietlony jako "lA mA kotA".
+
+4. Strumieñ X4 pomija co drugi znak, tj. zamiast "ala ma kota" wyœwietli "aam oa"
+
+5. Strumieñ X5 podwaja ka¿dy znak, tj. zamiast "ala ma kota" wyœwietli "aallaa  mmaa  kkoottaa".
+
+6. Strumieñ X6 modyfikuje strumienie Y1, Y2, wypisuj¹c ich znaki na zmianê.
+
+Czyli jeœli Y1 wypisuje "alan", a Y2 wypisuje "mama", to X6 wypisuje "amlamna".
+
+7. Stwórz strumieñ X7, który bêdzie na zmianê wypisywa³ znaki:
+- z pierwszego strumienia, z usuniêtymi spacjami i znakami nowej linii, wartoœciami wszystkich cyfr obni¿onymi o 1 (czyli np. zamiast 345.7 bêdzie napisane 234.7; 0 siê nie zmienia)
+- z drugiego strumienia, w którym najpierw usuniêto co drugi znak, wszystkie litery zosta³y zmienione na wielkie, poza liter¹ 'a', której wszystkie wyst¹pienia zosta³y zmienione na ma³e
+- z trzeciego strumienia, który powsta³ z drugiego strumienia przez podwojenie ka¿dego znaku 
+
+8. Strumieñ X8 "sortuje pozycyjnie" dwa strumienie
+
+Dla strumieni Y1 = "alan" i Y2="mama", X8 wypisze "amalaman". Tj. najpierw wypisujemy znaki z pierwszej pozycji w poszczególnych strumieniach, posortowane rosn¹co. Nastepnie przechodzimy do drugiej pozycji itd.
+
+9. Strumieñ X9 dzia³a tak samo jak strumieñ X8, ale umo¿liwia wczytanie dowolnej liczby strumieni wejœciowych.
+
+10. Powinna byæ mo¿liwoœæ stworzenia dowolnej kombinacji zachowañ zdefiniowanych powy¿ej. Ponadto, rozwi¹zanie powinno dawaæ siê roszczerzyæ do innych tego typu funkcjonalnoœci.
